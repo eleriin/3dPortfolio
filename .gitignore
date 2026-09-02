@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 # personal / private project data
-src/constants/
+# src/constants/ 
 
 # Editor directories and files
 .vscode/*
