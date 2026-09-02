@@ -62,6 +62,18 @@ const Contact = () => {
   return (
     <section className='relative flex lg:flex-row flex-col
       max-container h-[100vh]'>
+        {/* TEMPORARY CONTACT OFFLINE BANNER */}
+<div className='absolute inset-0 flex items-center justify-center pointer-events-none z-50 overflow-hidden'>
+  <div className='w-[160%] -rotate-[12deg] bg-black py-6 shadow-2xl'>
+    <div className='text-center text-white font-black uppercase tracking-[0.25em] text-4xl md:text-6xl lg:text-8xl'>
+      CONTACT OFFLINE
+    </div>
+
+    <div className='text-center text-white/60 uppercase tracking-[0.35em] text-xs md:text-sm mt-2'>
+      Currently under maintenance
+    </div>
+  </div>
+</div>
         {alert.show && <Alert { ...alert} />}
 
         <div className='flex-1 min-w-[50%] flex flex-col'>
